@@ -1,0 +1,160 @@
+body {
+  font-family: Hack, monospace;
+  background-color: #fbfbfb;
+}
+
+.card {
+  box-shadow: 4px 5px 10px grey;
+}
+
+.question {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.img_div {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.quesImage {
+  width: 20%;
+}
+
+.textarea {
+  border-radius: 5px;
+  max-width: 50%;
+  padding: 15px;
+  width: 60%;
+  box-shadow: 2px 3px 10px grey;
+}
+
+.textarea:focus {
+  border: 1px #000 solid;
+  outline: none;
+}
+
+.record-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.record-container {
+  background-color: #333333;
+  background-size: cover;
+  background-position: top center;
+  color: white;
+  /* max-width: 500px; */
+  position: relative;
+  z-index: 2;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+  box-shadow: 4px 5px 10px grey;
+      /* max-width: 500px; */
+      width: 45%;
+}
+
+.sound-wave {
+  /* margin: 20px 0; */
+  height: 60px;
+  width: 100%;
+}
+
+.btn {
+  font-size: 2rem;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.record-text {
+  text-align: center;
+  padding: 10px;
+  font-size: larger;
+}
+
+.btn.PoinEve {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.audio-playback {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  width: 100%;
+}
+
+.audio-playback:focus {
+  outline: none;
+}
+
+.submit-btn {
+  font-family: Hack, monospace;
+  background: #424242;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.25rem;
+  padding: 0.75rem;
+  border: 0;
+  transition: all 0.5s;
+  border-radius: 10px;
+  width: auto;
+  position: relative;
+  min-width: 200px;
+  box-shadow: 2px 3px 10px grey;
+  margin-top: 10px;
+}
+.submit-btn:focus {
+  outline: none;
+}
+.submit-btn:hover {
+  box-shadow: 5px 6px 10px grey;
+}
+
+@media only screen and (max-width: 500px) {
+  .question {
+    padding: 20px;
+  }
+
+  .quesImage {
+    width: 50vw;
+  }
+
+  .textarea {
+    border-radius: 5px;
+    /* max-width: 100%; */
+    padding: 15px;
+    width: -webkit-fill-available;
+    margin: 0 15px;
+    max-width: -webkit-fill-available;
+    box-shadow: 2px 3px 10px grey;
+  }
+
+  .record-div {
+    display: flex;
+    padding: 0 15px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sound-wave {
+    margin: 0;
+    text-align: center;
+    height: 60px;
+    /* width: inherit; */
+  }
+
+  .img_div {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .record-container {
+    width: 100%;
+  }
+}
